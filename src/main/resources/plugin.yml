@@ -1,0 +1,6 @@
+name: DefaultGroup
+version: ${pluginversion}
+main: org.royaldev.defaultgroup.DefaultGroup
+author: jkcclemens
+description: Sets players' default group on join.
+depend: [Vault]

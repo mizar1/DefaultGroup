@@ -1,0 +1,5 @@
+# Should users with no group be given one on join?
+enabled: true
+
+# The default group to set users with no groups to.
+default_group: default
