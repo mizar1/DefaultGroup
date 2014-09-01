@@ -27,8 +27,11 @@ public class WowListener implements Listener {
             hasGroup = false; // hopefully
         }
         if (hasGroup) return;
-        this.plugin.getPermission().playerAddGroup(p, this.plugin.getDefaultGroup());
-        this.plugin.getLogger().info("Added " + p.getName() + " to group " + this.plugin.getDefaultGroup() + ".");
+        boolean addGroupErr;
+        addGroupErr = this.plugin.getPermission().playerAddGroup( (String) null, p, this.plugin.getDefaultGroup());
+        if ( addGroupErr ) {
+            this.plugin.getLogger().info("Added " + p.getName() + " to group " + this.plugin.getDefaultGroup() + ".");
+        }
     }
 
 }
